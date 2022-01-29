@@ -1,33 +1,31 @@
-
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
-@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Readex+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Readex+Pro&display=swap");
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #EE6352;
-  --secondary-color: #F2D398;
-  --accent1-color: #08B2E3;
-  --accent2-color: white;
+  --primary-color: #006661;
+  --secondary-color: #ffe570;
+  --accent1-color: #faf4d3;
+  --accent2-color: #152529;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Arvo";
   --paragraph-font: Readex_Pro, Georgia, serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #EE6352;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #EE6352; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #EE6352  ;
-  --nav-link-color: #EE6352;
-  --nav-background-color: #F2D398;
+  --headline-color-on-white: #152529; /* headlines on a white background */
+  --headline-color-on-color: white; /* headlines on a colored background */
+  --paragraph-color-on-white: #006661; /* paragraph text on a white background */
+  --paragraph-color-on-color: #292100; /* paragraph text on a colored background */
+  --paragraph-background-color: #ffe570;
+  --nav-link-color: white;
+  --nav-background-color: #006661;
   --nav-hover-link-color: white;
-  --nav-hover-background-color: #EE6352;
+  --nav-hover-background-color: #152529;
 }
-
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
@@ -43,7 +41,12 @@ img {
   margin: 0 auto;
   max-width: 300px;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
 }
@@ -61,7 +64,8 @@ header {
   color: var(--paragraph-color-on-color);
   background-color: var(--paragraph-background-color);
 }
-header > h1, header > h2 {
+header > h1,
+header > h2 {
   color: var(--headline-color-on-color);
 }
 p {
@@ -78,7 +82,7 @@ p {
 .colors th {
   background-color: #999;
 }
-.colors td{
+.colors td {
   width: 25%;
   height: 3em;
 }
@@ -91,7 +95,7 @@ p {
 .accent1 {
   background-color: var(--accent1-color);
 }
-.accent2{
+.accent2 {
   background-color: var(--accent2-color);
 }
 p.colored {
@@ -104,17 +108,18 @@ nav {
   text-align: center;
   font-size: 1.2em;
 }
-nav  {
+nav {
   list-style-type: none;
   display: flex;
 }
 nav a {
-  padding:1em;
+  padding: 1em;
   min-width: 120px;
   text-decoration: none;
   padding: 10px;
 }
-nav a:link, nav a:visited {
+nav a:link,
+nav a:visited {
   color: var(--nav-link-color);
 }
 nav a:hover {
@@ -127,7 +132,8 @@ nav a:hover {
 
   grid-template-columns: repeat(6, 15%);
   grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
+  grid-template-areas:
+    ". . home home . ."
     ". . . top . ."
     ". left left right right ."
     "page2 page2 . . page3 page3";
