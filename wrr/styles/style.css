@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Nunito&display=swap");
+
+body {
+  background-color: #fcfaf7;
+  font-family: "Nunito", Arial, sans-serif;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
 #content {
   max-width: 1600px;
   margin: 0 auto;
@@ -8,6 +22,7 @@ nav a {
   text-align: center;
   color: #fcfaf7;
   text-decoration: none;
+  padding: 35px;
 }
 
 nav a:hover {
@@ -27,7 +42,7 @@ nav a:hover {
   text-align: center;
 }
 
-.button_box {
+.button-box {
   text-align: center;
 }
 
@@ -40,17 +55,15 @@ main section {
   background-color: #faf4d3;
 }
 
-body {
-  background-color: #fcfaf7;
-  margin: 0px;
-}
-
 header {
   background-color: rgb(0, 70, 67, 0.7);
 }
 
 .home-title {
   color: #152529;
+  font-size: 2em;
+  font-family: "Arvo", Times, serif;
+  margin-top: 10px;
 }
 
 .book,
@@ -58,6 +71,10 @@ header {
   background-color: #ffe570;
   color: #3d3200;
   text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
 }
 
 .book:hover,
@@ -68,18 +85,25 @@ header {
 
 .msg {
   background-color: #006661;
+  line-height: 1.5em;
+  padding: 35px;
 }
 
 .msg h2 {
   color: #fcfaf7;
+  font-family: "Arvo", Times, serif;
 }
 
 .msg p {
   color: #fcfaf7;
+  font-size: 1em;
+  padding-bottom: 15px;
 }
 
 footer {
   background-color: #006661;
+  padding: 25px 50px;
+  margin-top: 200px;
 }
 
 footer h3 {
@@ -99,10 +123,36 @@ footer h3 a:hover {
   text-decoration: underline;
 }
 
+footer .social img {
+  padding-top: 15px;
+}
+
+#logo_link {
+  padding-top: 5px;
+}
+
 .logo {
   width: 80px;
 }
 
 .icon {
   width: 80px;
+}
+
+.rivers-card,
+.camping-card,
+.rapids-card {
+  margin: 200px 0;
+}
+
+.card-img {
+  border: 10px solid #ffe570;
+}
+
+main section img {
+  box-sizing: border-box;
+}
+
+img.mountains {
+  margin: 100px 0 100px 0;
 }
